@@ -1,0 +1,178 @@
+.contenedor{
+
+    padding: .1rem;
+    background: #da6335;
+}
+.contenedor div{
+
+  padding: 1rem;
+  background: #92e9ec;
+  border:.01rem solid #d6cbbd;
+  border-top-right-radius: .5rem;
+
+}
+.contenedor div a  {
+ 
+  text-decoration-line: none;
+  color: black;
+  
+
+}
+.contenedor div a:hover{
+  color: #566e56;
+
+
+}
+.Sociales ul li{
+  list-style: none;
+  
+
+
+}
+.Sociales ul li .face:hover {
+color: #0a0897;
+
+
+}
+.Sociales ul li .whats:hover:hover {
+  color: #0c9717;
+  
+  
+  }
+  .Sociales ul li .twit:hover {
+  color: #199ad6;
+    
+    
+    }
+    .Sociales ul li .you:hover {
+    color: #d61919;
+      
+      
+      }
+      .col img{
+
+        justify-items:center;
+        margin-top:2rem;
+      }
+    
+      .centrado{
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+
+      .titulo{
+
+        font-weight: 100;
+        text-align: center;
+        color:rgb(0, 82, 114);
+      }
+      .subtitulo{
+        font-weight: 500;
+        text-align: center;
+        color:red;
+        margin-bottom: 1px;
+        margin-top: 1px;
+      }
+
+      .borderCard{
+
+         border-radius:1%;
+         justify-content: center;
+      }
+
+      .imagen{
+
+        margin:1rem;
+        margin-top: 2rem;
+        margin-left:3.5rem;
+        padding:1rem;
+        border: 7px solid rgb(235, 0, 0);
+        width :"200";
+        height: "200";
+        
+
+      }
+      
+      .cardPoke{
+
+        justify-content: center;
+      }
+      .tituloPokemon{
+        margin:1px;
+        margin-left:3rem ;
+        margin-right: 3rem;
+        border: 2px solid rgb(238, 238, 238);
+
+      }
+
+      .piepagina{
+        
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        background: rgb(8, 21, 83);
+        text-justify: center;
+        
+      }
+     
+      .row .modificar{
+        background: #0f0f0e;
+
+
+      }
+      .Letra{
+        font-size: 1.1rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+      .tituloBienvenida{
+
+        font-size: 2rem;
+      }
+      @media(min-width:992px){
+        .tituloBienvenida{
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          font-size: 3rem;
+
+
+        }
+
+
+      }
+      @media(min-width:992px){
+        .piepagina{
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          font-size: 1rem;
+          
+
+        }
+        
+
+      }
+      .btnGuardar{
+        display:block;
+        background:rgba(255, 16, 16, 0.067);
+        color:rgb(240, 240, 240);
+        padding:1.5rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        font: 1.4rem;
+        text-decoration: none;
+        transition: 300ms all;
+        border-radius: 4%;
+        cursor: pointer;
+        text-align: center;
+        
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a7cfdf+0,23538a+100;Blue+3d+%238 */
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+20,2989d8+50,1e5799+80&0+0,0.8+15,1+19,1+81,0.8+85,0+100;Blue+Two+Sided+Transparent */
+   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e609a+20,2a95d8+50,1e609a+80&0+0,0.8+15,1+19,1+81,0.8+85,0+100 */
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2a95d8+13,1e609a+74,1e609a+85,1e609a+85,1e609a+85&0+0,0.8+15,1+19,1+81,0.8+85,0+100 */
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a7c6df+0,23428b+100 */
+        background: rgb(66, 134, 189); /* Old browsers */
+        background: -moz-linear-gradient(top,  rgb(75, 167, 196) 0%, rgb(28, 47, 99) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  rgb(78, 136, 184) 0%,rgb(21, 37, 75) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  rgb(76, 125, 165) 0%,rgb(39, 57, 99) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7c6df', endColorstr='#23428b',GradientType=0 ); /* IE6-9 */
+
+    
+    }
+    
