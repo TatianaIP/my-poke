@@ -16,16 +16,7 @@ def saludo (request): # primera vista recibe un request como
     listaPokemones2=["spearow","fearow","ekans","arbok","pikachu","raichu",
                     "sandshrew", "sandslash", "nidorina"
                    ]
-  
-    #  pokemon1="spearow"
-    #  pokemon2="fearow"
-    #  pokemon3="ekans"
-    #  pokemon4="arbok"
-    #  pokemon5="pikachu"
-    #  pokemon6="raichu"
-    #  pokemon7="sandshrew"
-    #  pokemon9="sandslash", "nidorina"
-                
+                 
     doc_externo=get_template('miplantilla.html') #busca la ruta especificada en settings.py template y le agrega esta 
     documento=doc_externo.render({"pokemones":listaPokemones,"pokemones2":listaPokemones2})  #renderizar a este tengo que pasarle directamente el Dic
 
@@ -35,26 +26,6 @@ def saludo (request): # primera vista recibe un request como
 def despedida(request): #segunda vista 
     return HttpResponse("Hasta luego queridos alumnos")
 
-def damefecha(request):
-
-    fecha_actual=datetime.datetime.now()
-
-    documento = """<html>
-    <body>
-    <h2>Fecha y hora actuales %s
-    </h2>
-    </body>
-    </html>""" %fecha_actual
-
-    return HttpResponse(documento)
-
-def calculaEdad(request,agno,edad):
-    
-    
-    periodo=agno-2021
-    edadFutura= edad+periodo
-    documento="<html><body><h2> En el año %s tendrás %s años" %(agno,edadFutura)
-    return HttpResponse(documento)
 
 def pokemon(request,name):
     
