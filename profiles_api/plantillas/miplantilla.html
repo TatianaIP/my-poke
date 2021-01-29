@@ -1,0 +1,188 @@
+
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Bootstrap CSS de la Nube CDN-->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+      {% load static %} 
+      <link rel="stylesheet" href= "{% static 'CSS/estilos1.css' %}">
+      <link rel = "preconnect" href = "https://fonts.gstatic.com">
+      <link href = "https://fonts.googleapis.com/css2? family = Roboto: wght @ 100 & display = swap" rel = "hoja de estilo">
+      <link rel="shortcut icon" href="{% static 'Imagenes/Favicon.png' %}" type="image/x-icon">
+      <!--este kit es para colocar las fuentes en forma de imagen, se debe dejar en el final  -->
+      <script src="https://kit.fontawesome.com/eaf6669a79.js" crossorigin="anonymous"></script>
+      <title>Pokemones 2NV</title>
+      <!--este kit es para colocar las fuentes en forma de imagen, se debe dejar en el final  -->
+      <script src="https://kit.fontawesome.com/eaf6669a79.js" crossorigin="anonymous"></script>
+   </head>
+   <body style ="font-family:'Roboto', sans-serif">
+      <!--aca le doy la letra -->
+      <div class="container ">
+         <!-- encabezado  -->
+         <header>
+            <div class="row d-flex justify-content-between align-items-center">
+               <div class="col-md 12 col-lg 6">
+                  {% load static %} 
+                  <img src="{% static 'Imagenes/logo.png' %}" class="img-fluid mx-auto d-block pt-4 pb-4" alt="Logotipo" width="150">    
+               </div>
+               <div class="col-md 12 col-lg 6">
+                  <div class="Sociales text-center ">
+                     <ul>
+                        <li >
+                           <i class="fa fa-facebook fa-2x face"aria-hidden="true">
+                           </i>
+                           <i class="fab fa-whatsapp fa-2x whats"aria-hidden="true"></i>
+                           <i class="fab fa-twitter fa-2x twit "aria-hidden="true"></i>
+                           <i class="fab fa-youtube fa-2x you"aria-hidden="true"></i>
+                        </li>
+                     </ul>
+                  </div >
+               </div>
+            </div>
+         </header>
+         <!-- Barra de Navegación -->
+         <nav class="navbar navbar-expand-sm navbar-dark bg-danger">
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+               aria-expanded="false" aria-label="Toggle navigation"></button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+               <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                  <li class="nav-item active">
+                     <a class="nav-link" href="#"> Inicio <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="https://pokemongolive.com/post/?hl=es">Noticias</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Galeria</a>
+                     <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="https://ar.pinterest.com/panchomariolani/pokemon/">Imagenes</a>
+                        <a class="dropdown-item" href="https://pokemaster.es/animedex/">Videos</a>
+                     </div>
+                  </li>
+               </ul>
+               <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit"></button>
+               </form>
+            </div>
+         </nav>
+         <!-- Slider  -->
+         <div class="row ">
+            <div class="col ">
+               <div id="carouselId" class="carousel slide modificar "   data-ride="carousel">
+                  <ol class="carousel-indicators">
+                     <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+                     <li data-target="#carouselId" data-slide-to="1"></li>
+                     <li data-target="#carouselId" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner " role="listbox">
+                     <div class="carousel-item active text-center col-sm 12 col-md 6 col-lg 4">
+                        {% load static %} 
+                        <img src="{% static 'Imagenes/poke1.jpg' %}" alt="Paris" weight="400" height="300">
+                     </div>
+                     <div class="carousel-item text-center col-sm 12 col-md 6 col-lg 4" >
+                        {% load static %} 
+                        <img src="{% static 'Imagenes/poke3.jpg' %}" alt="Roma" weight="500" height="300">
+                     </div>
+                     <div class="carousel-item text-center col-sm 12 col-md 6 col-lg 4">
+                        {% load static %} 
+                        <img src="{% static 'Imagenes/poke2.jpg' %}" alt="Roma1" weight="400" height="300">
+                     </div>
+                  </div>
+                  <a class="carousel-control-prev col-sm 12 col-md 6 col-lg 4" href="#carouselId" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next col-sm 12 col-md 6 col-lg 4"href="#carouselId" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                  </a>
+               </div>
+            </div>
+         </div>
+         </br>
+         <h1 class="titulo">lISTA DE POKEMONES</h1>
+         <h2 class="subtitulo">Aqui podras ver tu lista de pokemones</h2>
+         </br>
+         <!-- Tarjetas pokemones  -->
+         <!-- <p>{{temas.0}}</p> acceder al indice de una lista -->
+         {% if pokemones %}  <!--evalua que temas exista y tenga info-->
+         <div  class="row  img-rounder">
+            {% for pokemon in pokemones %} <!--los bucles van entre llaves-->
+            <div class=" cardPoke cards col-sm 12 col-md 6 col-lg 3 borderCard" width="400" height="200">
+               <div weight="300">
+                  {% ifequal pokemon pokemones.0 %}
+                  {% load static %} 
+                  <img  class="imagen" style=" border-radius:50%" src="{% static 'Imagenes/spearow.png' %}"alt="Card image" width="200" height="200"  >
+                  <h5 class="card-title text-center" style="color:rgb(116, 7, 7)"><strong>{{pokemon.upper}}</strong></h5>
+                  {% endifequal %}
+                  {% ifequal pokemon pokemones.1 %}
+                  {% load static %} 
+                  <img  class="imagen" style="border-radius: 50%" src="{% static 'Imagenes/fearow.png' %}"alt="Card image" width="200" height="200"  >
+                  <h5 class="card-title text-center" style="color:rgb(78, 61, 5)"><strong>{{pokemon.upper}}</strong></h5>
+                  {% endifequal %}
+                  {% ifequal pokemon pokemones.2 %}
+                  {% load static %} 
+                  <img  class="imagen" style="border-radius: 50%" src="{% static 'Imagenes/ekans.jpg' %}"alt="Card image" width="200" height="200" >
+                  <h5 class="card-title text-center" style="color:rgb(116, 7, 83)"><strong>{{pokemon.upper}}</strong></h5>
+                  {% endifequal %}
+                  {% ifequal pokemon pokemones.3 %}
+                  {% load static %} 
+                  <img  class="imagen" style="border-radius: 50%" src="{% static 'Imagenes/arbok.png' %}"alt="Card image" width="200" height="200" >
+                  <h5 class="card-title text-center" style="color:rgb(142, 24, 197)"><strong>{{pokemon.upper}}</strong></h5>
+                  {% endifequal %}
+                  {% ifequal pokemon pokemones.4 %}
+                  {% load static %} 
+                  <img class="imagen" style="border-radius: 50%" src="{% static 'Imagenes/pikachu.jpg' %}"alt="Card image" width="200" height="200" >
+                  <h5 class="card-title text-center" style="color:rgb(197, 157, 24)"><strong>{{pokemon.upper}}</strong></h5>
+                  {% endifequal %}
+                  {% ifequal pokemon pokemones.5 %}
+                  {% load static %} 
+                  <img class="imagen" style="border-radius: 50%" src="{% static 'Imagenes/raichu.jpg' %}"alt="Card image" width="200" height="200" >
+                  <h5 class="card-title text-center" style="color:rgb(224, 133, 12)"><strong>{{pokemon.upper}}</strong></h5>
+                  {% endifequal %}
+                  {% ifequal pokemon pokemones.6 %}
+                  {% load static %} 
+                  <img class="imagen" style="border-radius: 50%"   src="{% static 'Imagenes/sandshrew.jpg' %}"alt="Card image" width="200" height="200"  >
+                  <h5 class="card-title text-center" style="color:rgb(190, 170, 101)"><strong>{{pokemon.upper}}</strong></h5>
+                  {% endifequal %}
+                  {% ifequal pokemon pokemones.7 %}
+                  {% load static %} 
+                  <img class="imagen" style="border-radius: 50%"  src="{% static 'Imagenes/sandslash.jpg' %}"alt="Card image"  width="200" height="200">
+                  <h5 class="card-title text-center" style="color:rgb(116, 90, 7)"><strong>{{pokemon.upper}}</strong></h5>
+                  {% endifequal %}
+                  {% ifequal pokemon pokemones.8 %}
+                  {% load static %} 
+                  <img class="imagen" style="border-radius: 50%" src="{% static 'Imagenes/nidorina.jpg' %}"alt="Card image"  width="200" height="200">
+                  <h5 class="card-title text-center" style="color:rgb(28, 158, 209)"><strong>{{pokemon.upper}}</strong></h5>
+                  {% endifequal %}
+               </div>
+               <p class="card-text " width="400">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, provident repudiandae
+                  voluptates quod qui obcaecati debitis, maiores similique ipsa voluptatibus perspiciatis
+                  non expedita at soluta! Expedita impedit quo minima dolorem!
+               </p>
+               <a href=http://127.0.0.1:8000/api/pokemon/{{pokemon}} class="btn primary btnGuardar">Habilidades</a>
+            </div>
+            {% endfor %} 
+         </div>
+         {% else %}
+           <p>No hay elementos que mostrar</p> 
+         {% endif %}
+        <div  class="col-sm 12 col-md 12 col-lg 12">
+          </div style="display:block">
+           <footer class="blockquote-footer text-center bg-danger  piepagina " style="color:rgb(0, 0, 0)">Copyright © 2021| TatianaIP</footer>
+          </div>
+        </div>
+     
+      <!-- Se colocan mis scripts -->
+      <!-- primero se coloca la libreria jquery-->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <!-- Los pooper los cuales me crean ventanas emergentes -->
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <!-- Los bootstrap de JavaScript -->
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+   </body>
+</html>
