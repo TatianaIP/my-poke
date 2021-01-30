@@ -3,12 +3,10 @@ from django.urls import path, include
 
 from django.contrib import admin
 from django.urls import path
-from profiles_api.views import saludo,despedida,damefecha,calculaEdad,pokemon
+from profiles_api.views import saludo,pokemon
 
 urlpatterns = [
-    path('saludo/',saludo),
-    path('nosveremos/<str:imagen>',despedida),
-    path('fecha/',damefecha),
-    path('edades/<int:edad>/<int:agno>/',calculaEdad),
+    path('saludo/',saludo), 
     path('pokemon/<str:name>/',pokemon),
 ]
+
